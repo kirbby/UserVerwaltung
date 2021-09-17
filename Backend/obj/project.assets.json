@@ -200,11 +200,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UserVerwaltung\\UserVerwaltung\\UserVerwaltung.csproj",
+      "projectUniqueName": "D:\\UserVerwaltung\\UserVerwaltung\\Backend\\UserVerwaltung.csproj",
       "projectName": "UserVerwaltung",
-      "projectPath": "D:\\UserVerwaltung\\UserVerwaltung\\UserVerwaltung.csproj",
+      "projectPath": "D:\\UserVerwaltung\\UserVerwaltung\\Backend\\UserVerwaltung.csproj",
       "packagesPath": "C:\\Users\\MatthiasWinkler\\.nuget\\packages\\",
-      "outputPath": "D:\\UserVerwaltung\\UserVerwaltung\\obj\\",
+      "outputPath": "D:\\UserVerwaltung\\UserVerwaltung\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",

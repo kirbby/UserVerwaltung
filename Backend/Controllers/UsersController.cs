@@ -17,9 +17,9 @@ namespace UserVerwaltung.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<User> GetUsers()
+        public ActionResult<IEnumerable<User>> GetUsers()
         {
-            return repository.GetUsers();
+            return Ok(repository.GetUsers());
         }
 
         [HttpGet("{id}")]

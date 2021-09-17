@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e7WQ/8QUE/WD1bneValBwrc8sc2vqFHmFnHtKChFoa9zm03BBcDZMuHa7qO4eNBy5BPV6fAJIkS0jAn9RK87+w==",
+  "dgSpecHash": "VmaVNdAiRPTZQOS2nrp6ukZlf7n4lmmCX4/OEqYUyjOFRKKgRDiGDqWvMVfTGgyBcNHPYC4kLKFAnU9yBAbj5g==",
   "success": true,
-  "projectFilePath": "D:\\UserVerwaltung\\UserVerwaltung\\UserVerwaltung.csproj",
+  "projectFilePath": "D:\\UserVerwaltung\\UserVerwaltung\\Backend\\UserVerwaltung.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MatthiasWinkler\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\MatthiasWinkler\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
