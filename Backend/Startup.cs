@@ -31,6 +31,28 @@ namespace UserVerwaltung
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "UserVerwaltung", Version = "v1" });
             });
+            // services.AddCors(options =>
+            //     {
+            //         options.AddPolicy(name: "_myAllowSpecificOrigins",
+            //         builder =>
+            //         {
+            //             builder.WithOrigins("https://localhost:3000",
+            //                                 "http://localhost:3000",
+            //                                 "https://localhost:5001",
+            //                                 "http://localhost:5001")
+            //                                 .AllowAnyHeader()
+            //                                 .AllowAnyMethod();
+            //         });
+            //     });
+            services.AddCors(options =>
+        {
+            options.AddDefaultPolicy(
+                builder =>
+                {
+                    builder.WithOrigins("https://localhost:3000",
+                                        "https://localhost:5001");
+                });
+        });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,6 +66,8 @@ namespace UserVerwaltung
             }
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 
