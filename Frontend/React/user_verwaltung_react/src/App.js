@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import userDetail from './components/UserDetail';
+import Loading from './components/Loading';
 
 function App() {
+  const UserLoading = Loading(userDetail);
+  const [appState, setAppState] = useState({
+    loading: false,
+    user: null,
+  });
+
+  useEffect(() => {
+    setAppState({ loading: true });
+    const userId = 1;
+    const apiUrl = 'https://localhost:5001/Users/' + userId;
+    fetch(apiUrl)
+      .then((res) => res.json())
+      .then((user) => {
+        setAppState({ loading: false, user: user });
+      });
+  }, [setAppState]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className='container'>
+        <h1>Loaded User</h1>
+      </div>
+      <div className='user-container'>
+        <UserLoading isLoading={appState.loading} user={appState.user} />
+      </div>
     </div>
   );
 }
